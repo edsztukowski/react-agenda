@@ -1,17 +1,21 @@
 {
   "name": "rendez-vous",
-  "version": "0.0.2",
+  "version": "0.0.4",
   "private": true,
+  "homepage":"https://revln9.github.io/react-agenda",
   "dependencies": {
     "classnames": "^2.2.5",
     "drag-drop-touch-polyfill": "^1.0.0",
     "moment": "^2.2.0",
     "react": "^16.2.0",
+    "react-agenda": "^0.0.4",
     "react-dom": "^16.2.0",
-    "react-scripts": "1.0.17",
-    "react-agenda":"^0.0.3"
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17"
   },
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
