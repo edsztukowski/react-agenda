@@ -114,6 +114,8 @@ handleRangeSelection(item){
 }
 
 ```
+### Tip
+You can duplicate events, just hold CTRL while dragging & dropping and the event will be duplicated.
 
 ## Properties
 
