@@ -201,6 +201,8 @@ function mapItems(itemsArray, rowsPerHour, timezone) {
     if (!item.startDateTime) {
       return false;
     }
+    item.startDateTime = new Date(item.startDateTime);
+    item.endDateTime = new Date(item.endDateTime);
     var interval = 60 / rowsPerHour;
     var offsetMinutes = item.startDateTime.getMinutes() % interval;
     var start = (0, _moment2.default)(item.startDateTime).subtract(offsetMinutes, "minutes").toDate();
